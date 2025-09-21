@@ -1,0 +1,21 @@
+bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpZCI6IjY4MmQ1ZGNiMGM4ZTQwOTYwYzg0ZTQyMiIsIm5hbWUiOiJ0ZXN0IiwiZW1haWwiOiJsdGVzdEBnbWFpbC5jb20iLCJjb250YWN0X25vIjoiOTY5NDg5NjkzMyIsInJvbGUiOiJkcml2ZXIiLCJpc0FkbWluIjpmYWxzZSwiY291bnRyeSI6IkluZGlhIiwiY3JlYXRlZEF0IjoiMjAyNS0wNS0yMVQwNDo1OTo1NS44NzFaIiwidXBkYXRlZEF0IjoiMjAyNS0wNy0yOFQxMTowMzo1OC43NzVaIiwiaWF0IjoxNzU4NDI2OTM3LCJleHAiOjE3NjEwMTg5Mzd9.XM849jOWNr2VWc5jexRFl_qTSoJVhfHOJu51AjyTntU        
+{ userId: '68b697ea04c8ac920f1d6220', amount: 10000 }
+MongoServerError: E11000 duplicate key error collection: test.wallets index: userId_1 dup key: { userId: ObjectId('682d5dcb0c8e40960c84e422') }
+    at InsertOneOperation.execute (D:\akash\freelance\noni\autopool\autopool-backend-main\autopool-backend-main\node_modules\mongoose\node_modules\mongodb\lib\operations\insert.js:51:19)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async tryOperation (D:\akash\freelance\noni\autopool\autopool-backend-main\autopool-backend-main\node_modules\mongoose\node_modules\mongodb\lib\operations\execute_operation.js:207:20)
+    at async executeOperation (D:\akash\freelance\noni\autopool\autopool-backend-main\autopool-backend-main\node_modules\mongoose\node_modules\mongodb\lib\operations\execute_operation.js:75:16)
+    at async Collection.insertOne (D:\akash\freelance\noni\autopool\autopool-backend-main\autopool-backend-main\node_modules\mongoose\node_modules\mongodb\lib\collection.js:157:16) {
+  errorLabelSet: Set(0) {},
+  errorResponse: {
+    index: 0,
+    code: 11000,
+    errmsg: "E11000 duplicate key error collection: test.wallets index: userId_1 dup key: { userId: ObjectId('682d5dcb0c8e40960c84e422') }",
+    keyPattern: { userId: 1 },
+    keyValue: { userId: new ObjectId('682d5dcb0c8e40960c84e422') }
+  },
+  index: 0,
+  code: 11000,
+  keyPattern: { userId: 1 },
+  keyValue: { userId: new ObjectId('682d5dcb0c8e40960c84e422') }
+}
