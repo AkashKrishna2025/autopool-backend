@@ -1068,7 +1068,7 @@ exports.endRide = async (req, res) => {
         coordinates: [req.body.longitude, req.body.latitude],
       };
       ride.dropAddress = dropAddress;
-      ride.status = "Completed";
+      ride.status = "completed";
       ride.distance = distanceInKilometers;
       ride.distanceValue = distanceInMeters;
       ride.distanceUnit = distanceUnit;
@@ -1082,8 +1082,8 @@ exports.endRide = async (req, res) => {
 
       ride.save();
 
-      let updateRide = await RideModel.findByIdAndUpdate(req.body.rideId, {
-        status: "Completed",
+            let updateRide = await RideModel.findByIdAndUpdate(req.body.rideId, {
+        status: "completed",
         rideEnd_timeDate: {
           time,
           date,

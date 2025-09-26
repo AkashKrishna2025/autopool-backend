@@ -1,4 +1,5 @@
 const db = require("../models");
+const moment = require("moment");
 const Users = db.users;
 const Vehicles = db.Vehicles;
 const Rides = db.Rides
@@ -209,9 +210,29 @@ exports.profile = async (req, res) => {
     }
 
     if (user.role == "driver") {
-      const totalOnlineHours = 0;
-      const totalDistance = 0;
-      const totalJobs = 0;
+      // Calculate total jobs and total distance for the driver
+            const completedRides = await Rides.find({ driverId: user._id, status: /^completed$/i });
+      const totalJobs = completedRides.length;
+      const totalDistance = completedRides.reduce((sum, ride) => sum + (ride.distance || 0), 0);
+
+      // totalOnlineHours calculation is not directly available from existing models.
+      // It would require a dedicated logging mechanism for driver online/offline status.
+      let totalOnlineMilliseconds = 0;
+      for (const ride of completedRides) {
+        if (ride.rideStart_timeDate && ride.rideEnd_timeDate) {
+          const startTimeString = `${ride.rideStart_timeDate.date} ${ride.rideStart_timeDate.time}`;
+          const endTimeString = `${ride.rideEnd_timeDate.date} ${ride.rideEnd_timeDate.time}`;
+
+          const startTime = moment(startTimeString, "DD MMMM YYYY hh:mm A");
+          const endTime = moment(endTimeString, "DD MMMM YYYY hh:mm A");
+
+          if (startTime.isValid() && endTime.isValid()) {
+            const duration = moment.duration(endTime.diff(startTime));
+            totalOnlineMilliseconds += duration.asMilliseconds();
+          }
+        }
+      }
+      const totalOnlineHours = totalOnlineMilliseconds / (1000 * 60 * 60);
 
       user.totalOnlineHours = totalOnlineHours;
       user.totalDistance = totalDistance;

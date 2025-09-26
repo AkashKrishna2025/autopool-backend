@@ -243,6 +243,11 @@ exports.register = async (req, res) => {
         req.body.profile_img_name = fileName;
       }
 
+            let initialStatus = 'active';
+      if (req.body.userRole === 'driver') {
+        initialStatus = 'deactivate';
+      }
+
       const newUser = new Users({
         name: req.body.name,
         email: req.body.email,
@@ -253,6 +258,7 @@ exports.register = async (req, res) => {
         profile_img_name: req.body.profile_img_name,
         gender: req.body.gender,
         city: req.body.city,
+                status: initialStatus, // Set the status here
       });
 
       const userData = await newUser.save();
