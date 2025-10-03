@@ -1,0 +1,554 @@
+{
+    "is_error": false,
+    "message": "Ride detail found",
+    "data": {
+        "rideInfo": {
+            "pickLocation": {
+                "type": "Point",
+                "coordinates": [
+                    75.5539521,
+                    20.9999173
+                ]
+            },
+            "dropLocation": {
+                "type": "Point",
+                "coordinates": [
+                    75.5443615,
+                    21.013308
+                ]
+            },
+            "_id": "6884dadbc28585b72e54956b",
+            "userId": {
+                "lastLocation": {
+                    "type": "Point",
+                    "coordinates": [
+                        75.5443646,
+                        21.0132986
+                    ]
+                },
+                "_id": "687d2e6b94b569a2ca3c0127",
+                "name": "Chinmay Songirkar",
+                "email": "crsongirkar2@gmail.com",
+                "contact_no": "9969361331",
+                "role": "user",
+                "country": "India",
+                "city": "",
+                "status": "active",
+                "default_lang": "english",
+                "isOnRide": false,
+                "isOnline": false,
+                "socketId": "B5CIeK4cri5BVUS2AAAM",
+                "lastLocAccuracy": 75.5443646,
+                "lastLocHeading": 75.5443646,
+                "isAdmin": false,
+                "lastOnline": null,
+                "createdAt": "2025-07-20T17:59:07.002Z",
+                "updatedAt": "2025-08-23T11:55:18.548Z",
+                "__v": 0,
+                "firebase_token": "ffbBjj8uRHiqh2RZnnVOZK:APA91bGRqPgd1yq6Jok5YT32QDYODzl4MliHSH7dxiOUyPVDkZAvYWENf9yCW0_jW1v-zQYlYK7LarTGjI-P-iK9VNX-8i1PmVNpTSy9LKTbIg4-MQ3ouE0",
+                "gender": ""
+            },
+            "pickAddress": "XHX3+XH8, MJ College Rd, Shivram Nagar, Ramanand Nagar, Jalgaon, Maharashtra 425001, India",
+            "dropAddress": "26, Pimprala Rd, Prem Nagar, Muktainagar, Jalgaon, Maharashtra 425001, India",
+            "distance": 2.599,
+            "distanceValue": 2599,
+            "distanceUnit": "KM",
+            "distanceText": "2.599",
+            "searchHistory_id": "6884dacbc28585b72e54954e",
+            "vehicleType": "private",
+            "SharedRideId": "2m5ugxuigemdkat08q",
+            "status": "Completed",
+            "durationInMin": 0.28171666666666667,
+            "durationText": "",
+            "totalFare": 29,
+            "cancelAllowed": "false",
+            "cancelledBy": "",
+            "cancelledReason": "",
+            "messages": [],
+            "rideDate": 26072025,
+            "rideWeek": 30,
+            "rideYear": 2025,
+            "rideMonth": 7,
+            "payStatus": "pending",
+            "payMode": "cash",
+            "createdAt": "2025-07-26T13:40:43.541Z",
+            "updatedAt": "2025-07-26T13:46:54.346Z",
+            "__v": 0,
+            "driverId": {
+                "lastLocation": {
+                    "type": "Point",
+                    "coordinates": [
+                        75.5442754,
+                        21.0133607
+                    ]
+                },
+                "_id": "687e0e3b9c742c998c4d307b",
+                "name": "Chinmay Test",
+                "email": "john.doe@example.com",
+                "gender": "Male",
+                "contact_no": "9960361332",
+                "role": "driver",
+                "country": "India",
+                "city": "Pune",
+                "status": "active",
+                "default_lang": "english",
+                "isOnRide": false,
+                "isOnline": false,
+                "socketId": "MwgxcqVjB_uALvO5AAAV",
+                "lastLocAccuracy": 75.5442754,
+                "lastLocHeading": 75.5442754,
+                "isAdmin": false,
+                "lastOnline": null,
+                "createdAt": "2025-07-21T09:54:03.625Z",
+                "updatedAt": "2025-09-02T08:04:19.080Z",
+                "__v": 0,
+                "firebase_token": "ffbBjj8uRHiqh2RZnnVOZK:APA91bGRqPgd1yq6Jok5YT32QDYODzl4MliHSH7dxiOUyPVDkZAvYWENf9yCW0_jW1v-zQYlYK7LarTGjI-P-iK9VNX-8i1PmVNpTSy9LKTbIg4-MQ3ouE0"
+            },
+            "endOtp": "1795",
+            "otp": "6074",
+            "rideStart_timeDate": {
+                "time": "07:16 PM",
+                "date": "26 July 2025"
+            },
+            "rideEnd_timeDate": {
+                "time": "07:16 PM",
+                "date": "26 July 2025"
+            }
+        },
+        "vehicleInfo": [
+            {
+                "_id": "687e15df9c742c998c4d3274",
+                "vehicle_model": "Bajaj RE",
+                "reg_number": "MH 19 CG 7781",
+                "purchase_year": "2015",
+                "registration_number": "MH 19 CG 7781",
+                "seat_offering": 1,
+                "instruction": "",
+                "vehicle_type": "private",
+                "status": "active",
+                "comment": "",
+                "driver_id": "687e0e3b9c742c998c4d307b",
+                "createdAt": "2025-07-21T10:26:39.182Z",
+                "updatedAt": "2025-07-26T13:36:50.766Z",
+                "__v": 0
+            }
+        ],
+        "rideNotifications": [
+            {
+                "_id": "687e91bcf3e12adadd948e46",
+                "userId": "687d2e6b94b569a2ca3c0127",
+                "msg": "Your ride has been accepted by Chinmay Songirkar ",
+                "title": "Ride Accepted",
+                "isNew": true,
+                "createdAt": "2025-07-21T19:15:08.817Z",
+                "__v": 0
+            },
+            {
+                "_id": "687f48d1c4c1fd4eb31b1202",
+                "userId": "687d2e6b94b569a2ca3c0127",
+                "msg": "Your ride has been accepted by Chinmay Songirkar ",
+                "title": "Ride Accepted",
+                "isNew": true,
+                "createdAt": "2025-07-22T08:16:17.193Z",
+                "__v": 0
+            },
+            {
+                "_id": "687f4b07c4c1fd4eb31b1492",
+                "userId": "687d2e6b94b569a2ca3c0127",
+                "msg": "Your ride has been accepted by Chinmay Songirkar ",
+                "title": "Ride Accepted",
+                "isNew": true,
+                "createdAt": "2025-07-22T08:25:43.498Z",
+                "__v": 0
+            },
+            {
+                "_id": "687f4b0cc4c1fd4eb31b14a5",
+                "userId": "687d2e6b94b569a2ca3c0127",
+                "msg": "Your ride has been accepted by Chinmay Songirkar ",
+                "title": "Ride Accepted",
+                "isNew": true,
+                "createdAt": "2025-07-22T08:25:48.881Z",
+                "__v": 0
+            },
+            {
+                "_id": "687f4e21c4c1fd4eb31b16b6",
+                "userId": "687d2e6b94b569a2ca3c0127",
+                "msg": "Your ride has been accepted by Chinmay Songirkar ",
+                "title": "Ride Accepted",
+                "isNew": true,
+                "createdAt": "2025-07-22T08:38:57.877Z",
+                "__v": 0
+            },
+            {
+                "_id": "687f515dc4c1fd4eb31b1a13",
+                "userId": "687d2e6b94b569a2ca3c0127",
+                "msg": "Your ride has been accepted by Chinmay Songirkar ",
+                "title": "Ride Accepted",
+                "isNew": true,
+                "createdAt": "2025-07-22T08:52:45.749Z",
+                "__v": 0
+            },
+            {
+                "_id": "687f5178c4c1fd4eb31b1a2f",
+                "userId": "687d2e6b94b569a2ca3c0127",
+                "msg": "Your ride has been accepted by Chinmay Songirkar ",
+                "title": "Ride Accepted",
+                "isNew": true,
+                "createdAt": "2025-07-22T08:53:12.701Z",
+                "__v": 0
+            },
+            {
+                "_id": "687f642ac4c1fd4eb31b238d",
+                "userId": "687d2e6b94b569a2ca3c0127",
+                "msg": "Your ride has been accepted by Chinmay Songirkar ",
+                "title": "Ride Accepted",
+                "isNew": true,
+                "createdAt": "2025-07-22T10:12:58.308Z",
+                "__v": 0
+            },
+            {
+                "_id": "687f828477992b417836d20b",
+                "userId": "687d2e6b94b569a2ca3c0127",
+                "msg": "Your ride has been accepted by Chinmay Songirkar ",
+                "title": "Ride Accepted",
+                "isNew": true,
+                "createdAt": "2025-07-22T12:22:28.191Z",
+                "__v": 0
+            },
+            {
+                "_id": "6884d6fec28585b72e54918e",
+                "userId": "687d2e6b94b569a2ca3c0127",
+                "msg": "Your ride has been accepted by mahesh",
+                "title": "Ride Accepted",
+                "isNew": true,
+                "createdAt": "2025-07-26T13:24:14.615Z",
+                "__v": 0
+            },
+            {
+                "_id": "6884dae6c28585b72e54958e",
+                "userId": "687d2e6b94b569a2ca3c0127",
+                "msg": "Your ride has been accepted by Chinmay Songirkar ",
+                "title": "Ride Accepted",
+                "isNew": true,
+                "createdAt": "2025-07-26T13:40:54.163Z",
+                "__v": 0
+            },
+            {
+                "_id": "68868b8f0fb3eaaad631c6ee",
+                "userId": "687d2e6b94b569a2ca3c0127",
+                "msg": "Your ride has been accepted by Chinmay S",
+                "title": "Ride Accepted",
+                "isNew": true,
+                "createdAt": "2025-07-27T20:26:55.994Z",
+                "__v": 0
+            },
+            {
+                "_id": "68871f4674fdd3aa9b7b46c4",
+                "userId": "687d2e6b94b569a2ca3c0127",
+                "msg": "Your ride has been accepted by Chinmay S",
+                "title": "Ride Accepted",
+                "isNew": true,
+                "createdAt": "2025-07-28T06:57:10.880Z",
+                "__v": 0
+            },
+            {
+                "_id": "68873077e757e50f60e08586",
+                "userId": "687d2e6b94b569a2ca3c0127",
+                "msg": "Your ride has been accepted by Chinmay S",
+                "title": "Ride Accepted",
+                "isNew": true,
+                "createdAt": "2025-07-28T08:10:31.508Z",
+                "__v": 0
+            },
+            {
+                "_id": "68873316e757e50f60e08870",
+                "userId": "687d2e6b94b569a2ca3c0127",
+                "msg": "Your ride has been accepted by Chinmay S",
+                "title": "Ride Accepted",
+                "isNew": true,
+                "createdAt": "2025-07-28T08:21:42.451Z",
+                "__v": 0
+            },
+            {
+                "_id": "68873532e757e50f60e08b12",
+                "userId": "687d2e6b94b569a2ca3c0127",
+                "msg": "Your ride has been accepted by Chinmay S",
+                "title": "Ride Accepted",
+                "isNew": true,
+                "createdAt": "2025-07-28T08:30:42.886Z",
+                "__v": 0
+            },
+            {
+                "_id": "6887409be757e50f60e0953a",
+                "userId": "687d2e6b94b569a2ca3c0127",
+                "msg": "Your ride has been accepted by Chinmay S",
+                "title": "Ride Accepted",
+                "isNew": true,
+                "createdAt": "2025-07-28T09:19:23.143Z",
+                "__v": 0
+            },
+            {
+                "_id": "68874237e757e50f60e09753",
+                "userId": "687d2e6b94b569a2ca3c0127",
+                "msg": "Your ride has been accepted by Chinmay S",
+                "title": "Ride Accepted",
+                "isNew": true,
+                "createdAt": "2025-07-28T09:26:15.450Z",
+                "__v": 0
+            },
+            {
+                "_id": "688743d3e757e50f60e099ba",
+                "userId": "687d2e6b94b569a2ca3c0127",
+                "msg": "Your ride has been accepted by Chinmay S",
+                "title": "Ride Accepted",
+                "isNew": true,
+                "createdAt": "2025-07-28T09:33:07.155Z",
+                "__v": 0
+            },
+            {
+                "_id": "6887473ae757e50f60e09b1b",
+                "userId": "687d2e6b94b569a2ca3c0127",
+                "msg": "Your ride has been accepted by Chinmay S",
+                "title": "Ride Accepted",
+                "isNew": true,
+                "createdAt": "2025-07-28T09:47:38.251Z",
+                "__v": 0
+            },
+            {
+                "_id": "68874921e757e50f60e09d71",
+                "userId": "687d2e6b94b569a2ca3c0127",
+                "msg": "Your ride has been accepted by Chinmay S",
+                "title": "Ride Accepted",
+                "isNew": true,
+                "createdAt": "2025-07-28T09:55:45.772Z",
+                "__v": 0
+            },
+            {
+                "_id": "68874929e757e50f60e09d7b",
+                "userId": "687d2e6b94b569a2ca3c0127",
+                "msg": "Your ride has been accepted by Chinmay S",
+                "title": "Ride Accepted",
+                "isNew": true,
+                "createdAt": "2025-07-28T09:55:53.024Z",
+                "__v": 0
+            },
+            {
+                "_id": "68874d2ee757e50f60e0a304",
+                "userId": "687d2e6b94b569a2ca3c0127",
+                "msg": "Your ride has been accepted by Chinmay S",
+                "title": "Ride Accepted",
+                "isNew": true,
+                "createdAt": "2025-07-28T10:13:02.299Z",
+                "__v": 0
+            },
+            {
+                "_id": "68874d35e757e50f60e0a317",
+                "userId": "687d2e6b94b569a2ca3c0127",
+                "msg": "Your ride has been accepted by Chinmay S",
+                "title": "Ride Accepted",
+                "isNew": true,
+                "createdAt": "2025-07-28T10:13:09.711Z",
+                "__v": 0
+            },
+            {
+                "_id": "68874fe9e757e50f60e0a593",
+                "userId": "687d2e6b94b569a2ca3c0127",
+                "msg": "Your ride has been accepted by Chinmay S",
+                "title": "Ride Accepted",
+                "isNew": true,
+                "createdAt": "2025-07-28T10:24:41.026Z",
+                "__v": 0
+            },
+            {
+                "_id": "6887517be757e50f60e0a7bc",
+                "userId": "687d2e6b94b569a2ca3c0127",
+                "msg": "Your ride has been accepted by Chinmay S",
+                "title": "Ride Accepted",
+                "isNew": true,
+                "createdAt": "2025-07-28T10:31:23.979Z",
+                "__v": 0
+            },
+            {
+                "_id": "6893161a10c1a722cbfc04ef",
+                "userId": "687d2e6b94b569a2ca3c0127",
+                "msg": "Your ride has been accepted by testing driver",
+                "title": "Ride Accepted",
+                "isNew": true,
+                "createdAt": "2025-08-06T08:45:14.877Z",
+                "__v": 0
+            },
+            {
+                "_id": "689647a3648972cc78f26e02",
+                "userId": "687d2e6b94b569a2ca3c0127",
+                "msg": "Your ride has been accepted by testing driver",
+                "title": "Ride Accepted",
+                "isNew": true,
+                "createdAt": "2025-08-08T18:53:23.171Z",
+                "__v": 0
+            },
+            {
+                "_id": "689647a4648972cc78f26e19",
+                "userId": "687d2e6b94b569a2ca3c0127",
+                "msg": "Your ride has been accepted by testing driver",
+                "title": "Ride Accepted",
+                "isNew": true,
+                "createdAt": "2025-08-08T18:53:24.840Z",
+                "__v": 0
+            },
+            {
+                "_id": "6896489d648972cc78f26fb2",
+                "userId": "687d2e6b94b569a2ca3c0127",
+                "msg": "Your ride has been accepted by testing driver",
+                "title": "Ride Accepted",
+                "isNew": true,
+                "createdAt": "2025-08-08T18:57:33.095Z",
+                "__v": 0
+            },
+            {
+                "_id": "68964cb2648972cc78f272ed",
+                "userId": "687d2e6b94b569a2ca3c0127",
+                "msg": "Your ride has been accepted by testing driver",
+                "title": "Ride Accepted",
+                "isNew": true,
+                "createdAt": "2025-08-08T19:14:58.105Z",
+                "__v": 0
+            },
+            {
+                "_id": "6897015ac4026d4172793750",
+                "userId": "687d2e6b94b569a2ca3c0127",
+                "msg": "Your ride has been accepted by testing driver",
+                "title": "Ride Accepted",
+                "isNew": true,
+                "createdAt": "2025-08-09T08:05:46.243Z",
+                "__v": 0
+            }
+        ]
+    },
+    "currentUserInShared": [
+        {
+            "pickLocation": {
+                "type": "Point",
+                "coordinates": [
+                    75.5539521,
+                    20.9999173
+                ]
+            },
+            "dropLocation": {
+                "type": "Point",
+                "coordinates": [
+                    75.5443615,
+                    21.013308
+                ]
+            },
+            "_id": "6884dadbc28585b72e54956b",
+            "userId": {
+                "lastLocation": {
+                    "type": "Point",
+                    "coordinates": [
+                        75.5443646,
+                        21.0132986
+                    ]
+                },
+                "_id": "687d2e6b94b569a2ca3c0127",
+                "name": "Chinmay Songirkar",
+                "email": "crsongirkar2@gmail.com",
+                "contact_no": "9969361331",
+                "role": "user",
+                "country": "India",
+                "city": "",
+                "status": "active",
+                "default_lang": "english",
+                "isOnRide": false,
+                "isOnline": false,
+                "socketId": "B5CIeK4cri5BVUS2AAAM",
+                "lastLocAccuracy": 75.5443646,
+                "lastLocHeading": 75.5443646,
+                "isAdmin": false,
+                "lastOnline": null,
+                "createdAt": "2025-07-20T17:59:07.002Z",
+                "updatedAt": "2025-08-23T11:55:18.548Z",
+                "__v": 0,
+                "firebase_token": "ffbBjj8uRHiqh2RZnnVOZK:APA91bGRqPgd1yq6Jok5YT32QDYODzl4MliHSH7dxiOUyPVDkZAvYWENf9yCW0_jW1v-zQYlYK7LarTGjI-P-iK9VNX-8i1PmVNpTSy9LKTbIg4-MQ3ouE0",
+                "gender": ""
+            },
+            "pickAddress": "XHX3+XH8, MJ College Rd, Shivram Nagar, Ramanand Nagar, Jalgaon, Maharashtra 425001, India",
+            "dropAddress": "26, Pimprala Rd, Prem Nagar, Muktainagar, Jalgaon, Maharashtra 425001, India",
+            "distance": 2.599,
+            "distanceValue": 2599,
+            "distanceUnit": "KM",
+            "distanceText": "2.599",
+            "searchHistory_id": "6884dacbc28585b72e54954e",
+            "vehicleType": "private",
+            "SharedRideId": "2m5ugxuigemdkat08q",
+            "status": "Completed",
+            "durationInMin": 0.28171666666666667,
+            "durationText": "",
+            "totalFare": 29,
+            "cancelAllowed": "false",
+            "cancelledBy": "",
+            "cancelledReason": "",
+            "messages": [],
+            "rideDate": 26072025,
+            "rideWeek": 30,
+            "rideYear": 2025,
+            "rideMonth": 7,
+            "payStatus": "pending",
+            "payMode": "cash",
+            "createdAt": "2025-07-26T13:40:43.541Z",
+            "updatedAt": "2025-07-26T13:46:54.346Z",
+            "__v": 0,
+            "driverId": "687e0e3b9c742c998c4d307b",
+            "endOtp": "1795",
+            "otp": "6074",
+            "rideStart_timeDate": {
+                "time": "07:16 PM",
+                "date": "26 July 2025"
+            },
+            "rideEnd_timeDate": {
+                "time": "07:16 PM",
+                "date": "26 July 2025"
+            }
+        }
+    ]
+}
+
+
+{
+    "is_error": false,
+    "message": "Profile found",
+    "data": {
+        "_id": "687e0e3b9c742c998c4d307b",
+        "name": "Chinmay Test",
+        "email": "john.doe@example.com",
+        "gender": "Male",
+        "contact_no": "9960361332",
+        "role": "driver",
+        "country": "India",
+        "city": "Pune",
+        "status": "active",
+        "default_lang": "english",
+        "isOnRide": false,
+        "isOnline": false,
+        "socketId": "MwgxcqVjB_uALvO5AAAV",
+        "lastLocation": {
+            "type": "Point",
+            "coordinates": [
+                75.5442754,
+                21.0133607
+            ]
+        },
+        "lastLocAccuracy": 75.5442754,
+        "lastLocHeading": 75.5442754,
+        "isAdmin": false,
+        "lastOnline": null,
+        "createdAt": "2025-07-21T09:54:03.625Z",
+        "updatedAt": "2025-09-02T08:04:19.080Z",
+        "__v": 0,
+        "firebase_token": "ffbBjj8uRHiqh2RZnnVOZK:APA91bGRqPgd1yq6Jok5YT32QDYODzl4MliHSH7dxiOUyPVDkZAvYWENf9yCW0_jW1v-zQYlYK7LarTGjI-P-iK9VNX-8i1PmVNpTSy9LKTbIg4-MQ3ouE0",
+        "totalOnlineHours": 0,
+        "totalDistance": 0,
+        "totalJobs": 0,
+        "memberSince": 2025,
+        "allDocumentsVarified": false
+    }
+}

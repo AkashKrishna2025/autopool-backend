@@ -1,0 +1,74 @@
+image: gcr.io/google.com/cloudsdktool/cloud-sdk:latest
+services:
+  - docker:19.03.12-dind
+
+variables:
+  DOCKER_DRIVER: overlay2
+  DOCKER_TLS_CERTDIR: "/certs"
+
+stages:
+  - authenticate_and_setup
+  - dockerize
+  - deploy
+
+download_secure_files:
+  stage: authenticate_and_setup
+  variables:
+    SECURE_FILES_DOWNLOAD_PATH: './secure_files/'  # Custom path for secure files
+  script:
+    - echo "Downloading download-secure-files tool..."
+    - curl --silent "https://gitlab.com/gitlab-org/incubation-engineering/mobile-devops/download-secure-files/-/raw/main/installer" | bash
+    - echo "Setting execute permissions for download-secure-files..."
+    - chmod +x /usr/bin/download-secure-files
+    - echo "Downloading secure files..."
+    - /usr/bin/download-secure-files
+    - echo "Listing downloaded secure files..."
+    - ls -l ./secure_files/
+    - echo "Authenticating to GCP..."
+    - gcloud auth activate-service-account --key-file=./secure_files/auto-pool-git-labs-gcp-key.json
+    - gcloud config set project $GCP_PROJECT_ID
+    - gcloud auth configure-docker -q asia-south1-docker.pkg.dev
+  cache:
+    key: ${CI_PROJECT_NAME}
+    paths:
+      - /root/.docker/config.json
+      - ./secure_files/
+
+dockerize:
+  stage: dockerize
+  image: gcr.io/google.com/cloudsdktool/cloud-sdk:latest
+  services:
+    - docker:19.03.12-dind
+  variables:
+    DOCKER_DRIVER: overlay2
+    DOCKER_HOST: tcp://docker:2375
+    DOCKER_TLS_CERTDIR: ""
+  cache:
+    key: ${CI_PROJECT_NAME}
+    paths:
+      - /root/.docker/config.json
+      - ./secure_files/
+  script:
+    - cp ./secure_files/env .env
+    - docker info
+    - gcloud auth activate-service-account --key-file=./secure_files/auto-pool-git-labs-gcp-key.json
+    - gcloud auth configure-docker -q asia-south1-docker.pkg.dev
+    - docker build -t asia-south1-docker.pkg.dev/$GCP_PROJECT_ID/auto-pool-ar/auto-pool-backend:$CI_COMMIT_SHA .
+    - docker push asia-south1-docker.pkg.dev/$GCP_PROJECT_ID/auto-pool-ar/auto-pool-backend:$CI_COMMIT_SHA
+
+deploy:
+  stage: deploy
+  cache:
+    key: ${CI_PROJECT_NAME}
+    paths:
+      - /root/.docker/config.json
+      - ./secure_files/
+  script:
+    - gcloud auth activate-service-account --key-file=./secure_files/auto-pool-git-labs-gcp-key.json
+    - gcloud config set project $GCP_PROJECT_ID
+    - gcloud run deploy backend-auto-pool --image asia-south1-docker.pkg.dev/$GCP_PROJECT_ID/auto-pool-ar/auto-pool-backend:$CI_COMMIT_SHA --region=asia-south1 --platform=managed --cpu=1 --max-instances=10
+
+  only:
+    - main
+
+
